@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Créer Partie</title>
+</head>
+<body>
+    <h1>
+        <center>Creation de partie</center>
+    </h1>
+    <form action="/api/jeux/create" method="POST">
+        <div>
+            <input type="text" name="name" id="name" placeholder="Nom de Partie">
+        </div>
+        <div>
+            <select name="selectEnemie" id="selectEnemie">
+                <option disabled>Choisissez votre enemie</option>
+            </select>
+        </div>
+        <br>
+        <button name="Submit" type="submit" style="min-width: 300px;">Validé</button>
+    </form>
+
+    <a href="/"> <input type="button" value="ACCUEIL"> </a>
+    <a href="/logout"> <input type="button" value="Se deconnecter"> </a>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Liste des parties</th>
+            </tr>
+            <tr>
+                <th colspan="1">Utilisateurs</th>
+                <th colspan="1">Tour</th>
+                <th colspan="1">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="gameList">
+        </tbody>
+    </table>
+    
+    <script src="projet.js"></script>
+</body>
+</html>

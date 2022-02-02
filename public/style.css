@@ -1,0 +1,33 @@
+body {
+  padding: 25px;
+  color: white;
+  font-size: 25px;
+}
+
+div {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+
+  margin-top: 200px;
+}
+td,
+th {
+  content: center;
+  border: 5px solid white;
+  width: 150px;
+  height: 150px;
+  color: black;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+.case {
+  background-color: yellow;
+}

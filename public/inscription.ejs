@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        <center>Formulaire d'inscription</center>
+    </h1>
+    <form action="/register" method="POST">
+        <div>
+            <input type="text" name="username" id="username" placeholder="Login" required minlength="1" maxlength="99">
+            <div>
+                <input type="password" name="password" id="password" placeholder="Password" required minlength="1" maxlength="99">
+            </div>
+            <div>
+                <br>
+                <button name="Submit" type="submit" style="min-width: 300px;">Validé</button>
+                <a href="/"> <input type="button" value="Se Connecter"> </a>
+                
+        
+            </div>
+        </div>
+    </form>
+    
+
+    <script src="projet.js"></script>
+</body>
+</html>
